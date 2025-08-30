@@ -1,3 +1,60 @@
 body {
   margin: 0;
 }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+a {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link{
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative;
+}
+
+.is-active {
+  color: blue;
+}
+
+.is-active::after {
+  content: '';
+  background-color: blue;
+  height: 5px;
+  width: 100%;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 0;
+}
+
+a:first-child {
+  margin-left: 0;
+}
+
+a:last-child {
+  margin-right: 0;
+}
+
+a:hover {
+  color: blue;
+}
