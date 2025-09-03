@@ -39,7 +39,7 @@ ul {
 }
 
 .nav__link {
-  margin: 0 9px;
+  margin: 0 10px;
   position: relative;
   font-size: 12px;
 }
@@ -47,10 +47,6 @@ ul {
 .nav__link__item {
   color: black;
   text-decoration: none;
-}
-
-.special_nav__link__item {
-  color: var(--lead-color);
 }
 
 .is-active {
@@ -67,14 +63,14 @@ ul {
   bottom: 0;
 }
 
-a:first-child {
+.nav__link:first-child {
   margin-left: 0;
 }
 
-a:last-child {
+.nav__link:last-child {
   margin-right: 0;
 }
 
 a:hover {
-  color: #00acdc;
+  color: var(--lead-color);
 }
