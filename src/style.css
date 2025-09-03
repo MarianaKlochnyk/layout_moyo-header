@@ -1,14 +1,20 @@
+:root {
+  --lead-color: #00acdc;
+}
+
 body {
   margin: 0;
+  padding: 0;
 }
 
 html {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Roboto, Arial, serif;
   font-style: normal;
   font-weight: 500;
 }
 
 a {
+  text-decoration: none;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -19,30 +25,44 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
 }
 
-.nav__link{
+.nav__link {
+  margin: 0 9px;
+  position: relative;
+  font-size: 12px;
+}
+
+.nav__link__item {
   color: black;
   text-decoration: none;
-  margin: 0 10px;
-  position: relative;
+}
+
+.special_nav__link__item {
+  color: var(--lead-color);
 }
 
 .is-active {
-  color: blue;
+  color: var(--lead-color);
 }
 
 .is-active::after {
   content: '';
-  background-color: blue;
-  height: 5px;
+  background-color: var(--lead-color);
+  height: 4px;
   width: 100%;
-  border-radius: 7px;
+  border-radius: 12px;
   position: absolute;
   bottom: 0;
 }
@@ -56,5 +76,5 @@ a:last-child {
 }
 
 a:hover {
-  color: blue;
+  color: var(--lead-color);
 }
