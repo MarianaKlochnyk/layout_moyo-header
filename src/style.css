@@ -76,5 +76,5 @@ a:last-child {
 }
 
 a:hover {
-  color: var(--lead-color);
+  color: #00acdc;
 }
