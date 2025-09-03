@@ -8,7 +8,7 @@ body {
 }
 
 html {
-  font-family: Roboto, Arial, serif;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -73,6 +73,6 @@ ul {
   margin-right: 0;
 }
 
-a:hover {
+.nav__link__item:hover {
   color: var(--blue);
 }
